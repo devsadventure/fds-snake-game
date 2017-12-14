@@ -8,30 +8,28 @@ function SnakeGameLogic() {
   this.fruit = {x: 5, y: 10};
 }
 
-SnakeGameLogic.prototype = {
-  up() {
-    // 위쪽 화살표 키를 누르면 실행되는 함수
-    console.log('up');
-  },
-  down() {
-    // 아래쪽 화살표 키를 누르면 실행되는 함수
-    console.log('down');
-  },
-  left() {
-    // 왼쪽 화살표 키를 누르면 실행되는 함수
-    console.log('left');
-  },
-  right() {
-    // 오른쪽 화살표 키를 누르면 실행되는 함수
-    console.log('right');
-  },
-  nextState() {
+SnakeGameLogic.prototype.up = function() {
+  console.log('up');
+}
+
+SnakeGameLogic.prototype.down = function() {
+  console.log('down');
+}
+
+SnakeGameLogic.prototype.left = function() {
+  console.log('left');
+}
+
+SnakeGameLogic.prototype.right = function() {
+  console.log('right');
+}
+
+SnakeGameLogic.prototype.nextState = function() {
     // 한 번 움직여야 할 타이밍마다 실행되는 함수
     // 게임이 아직 끝나지 않았으면 `true`를 반환
     // 게임이 끝났으면 `false`를 반환
-    console.log(`nextState`);
-    return true;
-  },
+  console.log(`nextState`);
+  return true;
 }
 
 export default SnakeGameLogic;
