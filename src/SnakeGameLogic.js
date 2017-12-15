@@ -68,8 +68,7 @@ SnakeGameLogic.prototype.nextState = function () {
   // 게임이 아직 끝나지 않았으면 `true`를 반환
   // 게임이 끝났으면 `false`를 반환
   console.log(`nextState`);
-  if(false){
-
+  if (this.joints[0].x >= 19 || this.joints[0].y >= 15 || this.joints[0].x < 0 || this.joints[0].y < 0){
     return false;
   } else if (true) {
     if (this.joints[0].x === this.fruit.x && this.joints[0].y === this.fruit.y) {
@@ -104,6 +103,7 @@ SnakeGameLogic.prototype.nextState = function () {
         y: this.joints[0].y - 1
       });
     }
+    console.log(this.joints);
     return true;
   }
 }
