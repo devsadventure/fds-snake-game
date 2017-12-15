@@ -32,37 +32,21 @@ function SnakeGameLogic() {
 
 
 SnakeGameLogic.prototype.up = function () {
-  this.joints.splice(0, 1, {
-    x: this.joints[0].x - 1,
-    y: this.joints[0].y - 1
-  });
   this.direction = "up";
   console.log('up');
 }
 
 SnakeGameLogic.prototype.down = function () {
-  this.joints.splice(0, 1, {
-    x: this.joints[0].x - 1,
-    y: this.joints[0].y
-  });
   this.direction = "down";
   console.log('down');
 }
 
 SnakeGameLogic.prototype.left = function () {
-  this.joints.splice(0, 1, {
-    x: this.joints[0].x - 1,
-    y: this.joints[0].y - 1
-  });
   this.direction = "left";
   console.log('left');
 }
 
 SnakeGameLogic.prototype.right = function () {
-  this.joints.splice(0, 1, {
-    x: this.joints[0].x,
-    y: this.joints[0].y - 1
-  });
   this.direction = "right";
   console.log('right');
 }
